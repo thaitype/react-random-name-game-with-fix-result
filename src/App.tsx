@@ -1,6 +1,8 @@
 import React, { useState, CSSProperties, useEffect } from 'react'
 import { useTransition, animated, AnimatedProps, useSpringRef } from '@react-spring/web';
 
+// No type provided for useSound
+// @ts-ignore
 import useSound from 'use-sound';
 import clickSound from './mixkit-gate-latch-click-1924.wav';
 
