@@ -1,6 +1,10 @@
 # Birthday Party with faking random name
 
+[![Azure Static Web Apps CI/CD](https://github.com/thaitype/birthday-party-faking-random/actions/workflows/azure-static-web-apps-blue-rock-040b9f200.yml/badge.svg)](https://github.com/thaitype/birthday-party-faking-random/actions/workflows/azure-static-web-apps-blue-rock-040b9f200.yml)
+
 Random Name with Fix Result using React Spring
+
+Demo: https://blue-rock-040b9f200.3.azurestaticapps.net/
 
 ## **Motivation**
 
