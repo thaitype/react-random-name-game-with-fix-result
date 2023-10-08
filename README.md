@@ -1,4 +1,6 @@
-# Random Name with Fix Result using React Spring
+# Birthday Party with faking random name
+
+Random Name with Fix Result using React Spring
 
 ## **Motivation**
 
