@@ -64,13 +64,12 @@ export default function App() {
 
   const onClick = async () => {
     const loopCount = 20;
-    // for (let i = loopCount; i >= 1; i--) {
-    //   await loopSlide(20 * i)
-    // }
-    // for (let i = 0; i < loopCount+10; i++) {
-    //   await loopSlide(20 * i);
-    // }
-    await loopSlide(20);
+    for (let i = loopCount; i >= 1; i--) {
+      await loopSlide(20 * i)
+    }
+    for (let i = 0; i < loopCount+10; i++) {
+      await loopSlide(20 * i);
+    }
     const nextIndex = getNextIndexResult();
     console.log(nextIndex, names[nextIndex]);
     goSlide(nextIndex);
