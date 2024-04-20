@@ -42,3 +42,8 @@ We've included a delightful click sound effect to enhance the user experience. T
 - [mixkit-gate-latch-click-1924.wav](https://chat.openai.com/c/src/mixkit-gate-latch-click-1924.wav)
 
 Feel free to explore and contribute to this open-source project, making it even better for your party or event needs!
+
+---
+
+Open the sound with this site, to improve experience
+https://www.youtube.com/watch?v=Kd0gtcSKG4U
