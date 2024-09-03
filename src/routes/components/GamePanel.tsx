@@ -4,11 +4,11 @@ import { useTransition, animated, AnimatedProps, useSpringRef } from '@react-spr
 // No type provided for useSound
 // @ts-ignore
 import useSound from 'use-sound';
-import clickSound from './mixkit-gate-latch-click-1924.wav';
+import clickSound from './assets/mixkit-gate-latch-click-1924.wav';
 
 
 import styles from './styles.module.css'
-import { names, selectedIndexes } from './data'
+import { names, selectedIndexes } from '../../data'
 
 function delay(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -31,7 +31,7 @@ const fireConfetti = async () => {
   window.dispatchEvent(new Event('fireConfetti'));
 };
 
-export default function App() {
+export default function GamePanel() {
   const [playSound] = useSound(clickSound);
   const [index, set] = useState(names.length-1);
   // const nextSlide = () => set(state => (state + 1) % names.length);
