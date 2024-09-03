@@ -33,8 +33,8 @@ const fireConfetti = async () => {
 
 export default function GamePanel() {
   const [playSound] = useSound(clickSound);
+  const [isRotating, setIsRotating] = useState(false);
   const [index, set] = useState(names.length-1);
-  // const nextSlide = () => set(state => (state + 1) % names.length);
   const [result, setResult] = useState(selectedIndexes); 
 
   const getNextIndexResult = () => {
@@ -65,6 +65,10 @@ export default function GamePanel() {
   }
 
   const onClick = async () => {
+    if(isRotating) {
+      return;
+    }
+    setIsRotating(true);
     const loopCount = 20;
     for (let i = loopCount; i >= 1; i--) {
       await loopSlide(20 * i)
@@ -78,6 +82,7 @@ export default function GamePanel() {
     for(let i = 0; i < 25; i++) {
       await loopConfetti(300);
     }
+    setIsRotating(false);
   }
 
   useEffect(() => {

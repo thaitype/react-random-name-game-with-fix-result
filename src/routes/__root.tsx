@@ -5,10 +5,14 @@ export const Route = createRootRoute({
   component: () => (
     <>
       <div className="p-2 flex gap-2">
-        <Link to="/" className="[&.active]:font-bold">
+        <Link to="/" className="[&.active]:font-bold" style={{
+          padding: '2rem',
+        }}>
           Home
         </Link>{' '}
-        <Link to="/play" className="[&.active]:font-bold">
+        <Link to="/play" className="[&.active]:font-bold" style={{
+          padding: '2rem',
+        }}>
           Play
         </Link>
       </div>
