@@ -5,12 +5,31 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: rgb(15, 18, 20);
 }
 
 body {
   font-family: system-ui;
   margin: 0;
+}
+
+.center-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea {
+  font-size: 20px; /* Larger font size */
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  resize: none; /* Optional: Prevents resizing */
 }
 
 *,
@@ -30,4 +49,26 @@ body {
 
 .flex.center {
   justify-content: center;
+}
+
+
+.blue-button {
+  background-color: #007bff; /* Blue background color for button */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.blue-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.blue-button:active {
+  background-color: #003f7f; /* Even darker blue when active */
 }

@@ -6,22 +6,37 @@ export const Route = createLazyFileRoute('/')({
 
 function Index() {
   return (
-    <div className="p-2">
+    <div className="center-wrapper">
+      <div className="p-2">
+        {/* <div style={{
+          backgroundColor: 'lightgray',
+        }}> */}
+          {/* <Link to="/" className="[&.active]:font-bold" style={{
+            padding: '2rem',
+          }}>
+            Home
+          </Link>{' '} */}
+          {/* <Link to="/play" search={{
+            foo: 'bar',
+          }} className="[&.active]:font-bold" style={{
+            padding: '2rem',
+          }}>
+            Play
+          </Link> */}
+        {/* </div> */}
+
         <div style={{
-        backgroundColor: 'lightgray',
-      }}>
-        <Link to="/" className="[&.active]:font-bold" style={{
-          padding: '2rem',
+          display: 'flex',
+          flexDirection: 'column',
         }}>
-          Home
-        </Link>{' '}
-        <Link to="/play" search={{
-          foo: 'bar',
-        }} className="[&.active]:font-bold" style={{
-          padding: '2rem',
-        }}>
-          Play
-        </Link>
+          <textarea className='textarea' placeholder="Type your text here..."></textarea>
+          {/* <button className='blue-button'>Play</button> */}
+          <Link to="/play" search={{
+            foo: 'bar',
+          }} className="blue-button">
+            Play
+          </Link>
+        </div>
       </div>
     </div>
   )
