@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.tsx'
+import "@mantine/core/styles.css";
+import { MantineProvider } from "@mantine/core";
 
 import './index.css'
 
@@ -8,6 +9,7 @@ import { RouterProvider, createRouter, createHashHistory } from '@tanstack/react
 
 // Import the generated route tree
 import { routeTree } from './routeTree.gen'
+import { theme } from './theme';
 
 const hashHistory = createHashHistory();
 
@@ -23,6 +25,6 @@ declare module '@tanstack/react-router' {
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <MantineProvider theme={theme} defaultColorScheme="dark"><RouterProvider router={router} /></MantineProvider>
   </React.StrictMode>,
 )

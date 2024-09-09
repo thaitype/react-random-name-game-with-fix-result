@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mantine/core": "^7.12.2",
     "@react-spring/web": "^9.7.3",
     "@tanstack/react-router": "^1.52.5",
     "react": "^18.2.0",
@@ -18,6 +19,9 @@
     "use-sound": "^4.0.1"
   },
   "devDependencies": {
+    "postcss": "^8.4.38",
+    "postcss-preset-mantine": "1.17.0",
+    "postcss-simple-vars": "^7.0.1",
     "@faker-js/faker": "^8.1.0",
     "@tanstack/router-devtools": "^1.52.5",
     "@tanstack/router-plugin": "^1.52.0",
